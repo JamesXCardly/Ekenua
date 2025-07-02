@@ -908,3 +908,250 @@ body {
         font-size: 0.75rem;
     }
 }
+
+/* Success Stories Section */
+.success-stories-section {
+    background-color: #f7f7f7; /* Light background from the image */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.success-stories-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4CAF50; /* Green color for the title */
+    margin-bottom: 3rem;
+}
+
+.success-story-card {
+    background-color: #fff; /* White background for the cards */
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensures image and content stay within rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.success-story-card:hover {
+    transform: translateY(-8px); /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.success-story-card .card-image-wrapper {
+    height: 180px; /* Fixed height for the image background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Padding around the image inside the wrapper */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Background colors for image wrappers based on the screenshot */
+.success-story-card .card-image-blue {
+    background-color: #0d1e3d; /* Dark blue background */
+}
+
+.success-story-card .card-image-black {
+    background-color: #000000; /* Black background */
+}
+
+.success-story-card .card-image-red {
+    background-color: #bb2f2a; /* Dark red background (Underground logo color) */
+}
+
+
+.success-story-card .card-image-wrapper img {
+    max-height: 100px; /* Max height for client logos */
+    width: auto;
+    object-fit: contain; /* Ensure image scales correctly */
+}
+
+.success-story-card .card-body {
+    padding: 1.8rem; /* Padding for the text content */
+}
+
+.story-category {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #666; /* Grey color for category */
+    margin-bottom: 0.5rem;
+    display: block; /* Ensures it takes full width */
+}
+
+.story-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.story-description,
+.story-approach {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem; /* Space between description and approach */
+}
+
+.story-description strong,
+.story-approach strong {
+    color: #333; /* Darker color for bold text like 'Client:' 'Challenge:' */
+}
+
+.learn-more-link {
+    color: #e11d48; /* Your brand red */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    display: inline-block; /* Allows padding/margin if needed */
+    margin-top: 1rem; /* Space above the link */
+}
+
+.learn-more-link:hover {
+    color: #4CAF50; /* Your brand green on hover */
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .success-stories-title {
+        font-size: 2rem;
+    }
+    .success-story-card .card-body {
+        padding: 1.5rem;
+    }
+    .story-title {
+        font-size: 1.2rem;
+    }
+    .story-description,
+    .story-approach {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .success-stories-card {
+        margin-bottom: 1.5rem; /* Reduce margin on very small screens */
+    }
+}
+
+/* Recognized by the Best Section */
+.recognized-by-best-section {
+    background-color: #f7f7f7; /* Light background from the image */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.recognized-by-best-section .partners-badge {
+    display: inline-block;
+    background-color: transparent; /* No specific background shown in image */
+    color: #666; /* Grey text color */
+    padding: 5px 0; /* Minimal padding */
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.recognized-by-best-section .recognized-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #4CAF50; /* Green color for the title */
+    margin-bottom: 1rem;
+}
+
+.recognized-by-best-section .recognized-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 450px; /* Limit width for readability */
+}
+
+.logo-carousel {
+    display: flex;
+    justify-content: space-around; /* Distributes logos evenly */
+    align-items: center;
+    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+    gap: 30px; /* Space between logos */
+}
+
+.carousel-item-logo {
+    flex-shrink: 0; /* Prevent logos from shrinking too much */
+    width: 120px; /* Default width for logos */
+    height: 60px; /* Default height for logos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    /* Remove the filter property entirely, or set to 'none' */
+    filter: none; /* This ensures they display in their actual colors */
+    transition: filter 0.3s ease; /* Keep transition if you add other hover effects later */
+}
+
+.carousel-item-logo img:hover {
+    /* You can add other hover effects here if desired, e.g., a slight scale or shadow */
+    /* For example: transform: scale(1.05); */
+}
+
+.carousel-dots {
+    margin-top: 2.5rem; /* Space above the dots */
+}
+
+.carousel-dots .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc; /* Default dot color */
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-dots .dot.active,
+.carousel-dots .dot:hover {
+    background-color: #4CAF50; /* Active/hover dot color (green) */
+    transform: scale(1.2); /* Slightly larger on hover/active */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .recognized-by-best-section .text-section {
+        text-align: center;
+    }
+    .recognized-by-best-section .recognized-description {
+        max-width: 100%; /* Remove max-width on smaller screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .carousel-section {
+        margin-top: 3rem; /* Add space between text and carousel on smaller screens */
+    }
+    .logo-carousel {
+        justify-content: center; /* Center logos when stacked */
+        gap: 20px;
+    }
+    .carousel-item-logo {
+        width: 100px; /* Slightly smaller logos on tablet */
+        height: 50px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .recognized-by-best-section .recognized-title {
+        font-size: 2.2rem;
+    }
+    .recognized-by-best-section .recognized-description {
+        font-size: 0.9rem;
+    }
+    .carousel-item-logo {
+        width: 90px; /* Even smaller logos on mobile */
+        height: 45px;
+    }
+}
